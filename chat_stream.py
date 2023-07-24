@@ -22,6 +22,9 @@ with open('tokenizer.pkl', 'rb') as tokenizer_file:
 with open('label_encoder.pkl', 'rb') as label_encoder_file:
     label_encoder = pickle.load(label_encoder_file)
 
+
+
+model = tf.keras.models.load_model("chatbot_model_tf")
 # Function to get the chatbot response
 
 
