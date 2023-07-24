@@ -62,6 +62,8 @@ total_words = len(tokenizer.word_index) + 1
 input_sequences = tokenizer.texts_to_sequences(patterns)
 max_sequence_length = max(len(seq) for seq in input_sequences)
 
+model = load_model("chatbot_model.h5")
+
 # Create the Streamlit application
 
 
